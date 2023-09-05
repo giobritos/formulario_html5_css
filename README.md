@@ -1,2 +1,3 @@
-# formulario_html5_css
-Criação de formulário em HTML5 e CSS com o qual uma pessoa poderá se cadastrar para utilizar os serviços de um site.
+# Formulário de Cadastro de Usuário
+
+Este é um exemplo de um formulário HTML para cadastro de usuário. O formulário coleta informações pessoais, de contato e preferências do usuário. Ele também inclui estilização CSS para melhorar a aparência e a usabilidade do formulário.
