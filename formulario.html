@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <div id="ladoalado"><img src="https://sead.ufms.br/files/2022/09/logo-ufms-digital.png" alt="logo ufms digital" class="logo"/><img src="https://sead.ufms.br/files/2023/03/UFMS.png" alt="logo agead ufms" class="logo"/></div>
+    
+    <h1>Cadastro de Usuário</h1>
+    
+    <form action="cadastro.html" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+            <br>
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="estadoCivil">
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Viúvo">Viúvo</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+            <br>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Contato</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+            <br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+            <br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            <br>
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            <br>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Cadastro</legend>
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <br>
+            <label for="confirmarSenha">Confirmar Senha:</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+            <br>
+            <label for="assuntosInteresse">Deseja receber informações sobre os seguintes assuntos:</label>
+            <label><input type="checkbox" name="interesse[]" value="Tecnologia">Tecnologia</label>
+            <label><input type="checkbox" name="interesse[]" value="Esportes">Esportes</label>
+            <label><input type="checkbox" name="interesse[]" value="Automóveis">Automóveis</label>
+            <label><input type="checkbox" name="interesse[]" value="Culinária">Culinária</label>
+            <label><input type="checkbox" name="interesse[]" value="Política">Política</label>
+            <label><input type="checkbox" name="interesse[]" value="Policial">Policial</label>
+            <label><input type="checkbox" name="interesse[]" value="Tempo">Tempo</label>
+            <label><input type="checkbox" name="interesse[]" value="Cultura">Cultura</label>
+            <label><input type="checkbox" name="interesse[]" value="Economia">Economia</label>
+            <label><input type="checkbox" name="interesse[]" value="Jogos">Jogos</label>
+            <label><input type="checkbox" name="interesse[]" value="Educação">Educação</label>
+            <label><input type="checkbox" name="interesse[]" value="Viagem">Viagem</label>
+            <label><input type="checkbox" name="interesse[]" value="Empregos">Empregos</label>
+            <label><input type="checkbox" name="interesse[]" value="Moda e Estilo">Moda e Estilo</label>
+        </fieldset>
+
+        <label><input type="checkbox" name="aceitoTermos" value="aceitoTermos">Li as regras de cadastro e autorizo a criação do usuário</label>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
